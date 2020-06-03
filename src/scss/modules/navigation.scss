@@ -1,0 +1,23 @@
+.navigation {
+    padding: 15px;
+    display: none;
+    &__link {
+      display: block;
+      color: rgb(26, 224, 26);
+      border-radius: 10px;
+      margin: 0 0 15px;
+      border: solid;
+      background: green;
+    }
+    &__link:hover {
+      color: greenyellow;
+    }
+    &__link:focus {
+      color: black;
+    }
+  }
+  
+  .navigation--open {
+    display: block;
+  }
+  

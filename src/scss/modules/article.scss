@@ -1,0 +1,31 @@
+.article {
+    &__header {
+      color: limegreen;
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        border-radius: 10%;
+        background: yellow;
+        margin-right: 10px;
+      }
+      &::after {
+        content: "";
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: purple;
+        margin-left: 10px;
+      }
+    }
+    &__description {
+      color: green;
+      &:hover {
+        background: grey;
+      }
+    }
+   
+  }
+  
