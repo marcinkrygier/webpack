@@ -24,6 +24,9 @@ body {
   );
   background-size: cover;
 }
+
+
+
 section {
   background: black;
 }
@@ -188,12 +191,4 @@ nav a {
     column-gap: 15px;
     row-gap: 15px;
   }
-}
-:root{
-  --background-color: #fefefe;
-  --text-color: black;
-}
-body{
-  --background-color: black;
-  --text-color: white;
 }
