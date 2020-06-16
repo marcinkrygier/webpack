@@ -1,6 +1,6 @@
 ![cover](https://cotenfrontend.pl/img/cover.png)
 
-# Marcin Krygier Homepage
+# `Marcin Krygier Homepage`
 
 *Mine homepage*
 
@@ -9,7 +9,7 @@
 Go to the project directory in console and type `npm install`.
 
 ## Available scripts
-```javaScript
+```
 
 `npm run start` - runs development mode
 
