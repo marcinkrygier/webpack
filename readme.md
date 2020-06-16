@@ -1,4 +1,4 @@
-![cover](./gh/building.jpg)
+![cover](./gh/palms.jpg)
 
 # `Marcin Krygier Homepage`
 
