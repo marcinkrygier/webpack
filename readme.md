@@ -1,8 +1,8 @@
 ![cover](https://cotenfrontend.pl/img/cover.png)
 
-# >Marcin Krygier Homepage
+# `Marcin Krygier Homepage`
 
-*Mine homepage*
+>Mine homepage
 
 ## How to start it?
 
