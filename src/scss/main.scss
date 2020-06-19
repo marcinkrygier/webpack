@@ -93,6 +93,11 @@ nav a {
   margin: 20px;
   &__header {
     color: blue;
+    transition: transform 2s linear;
+    transform-origin: top left;
+    &:hover{
+      transform: scale(2);
+    }
   }
 }
 

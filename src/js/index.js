@@ -145,6 +145,6 @@ switchModes.addEventListener(`click`, () => {
     document.documentElement.style.setProperty(`--text-color`, ` #fefefe`);
     isDark = true;
   }
-}
+});
 
 

@@ -1,6 +1,15 @@
 .article {
+ 
     &__header {
       color: limegreen;
+      transition: color 2s linear, padding 1s ease-in-out;
+      padding: 16px;
+
+      &:hover {
+        color:red;
+        padding: 32px;
+      }
+      
       &::before {
         content: "";
         display: inline-block;
@@ -9,6 +18,7 @@
         border-radius: 10%;
         background: yellow;
         margin-right: 10px;
+       
       }
       &::after {
         content: "";
@@ -22,8 +32,11 @@
     }
     &__description {
       color: green;
+      transition: transform 2s linear;
       &:hover {
-        background: grey;
+        background: rgb(73, 70, 70);
+        transform : translate( 20px,50px);
+       
       }
     }
    
