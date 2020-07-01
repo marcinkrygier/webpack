@@ -1,13 +1,12 @@
-import '../scss/main.scss';
+import "../scss/main.scss";
 
 /* place your code below */
-import moment from 'moment';
-const time = (moment().format('MMMM Do YYYY, h:mm:ss a'));
+import moment from "moment";
+const time = moment().format("MMMM Do YYYY, h:mm:ss a");
 const timePlaceholder = document.querySelector(`.time--js`);
 timePlaceholder.innerHTML = time;
 
-console.log('HELLO 🚀')
-
+console.log("HELLO 🚀");
 
 const name = "Marcin";
 const age = 34;
@@ -124,27 +123,26 @@ button.addEventListener(`click`, () => {
   console.log(heading.classList.contains(`main__heading`));
 });
 
-
-
 const hamburger = document.querySelector(`.hamburger--js`);
 hamburger.addEventListener(`click`, () => {
   const nav = document.querySelector(`.navigation--js`);
   nav.classList.toggle(`navigation--open`);
 });
 
-let isDark = false;
-const switchModes = document.querySelector(`.darkMode--js`);
-switchModes.addEventListener(`click`, () => {
-  if(isDark){
-    document.documentElement.style.setProperty(`--background-color`, `#fefefe`);
-    document.documentElement.style.setProperty(`--text-color`, `black`);
-    isDark = false;
-
-  }else {
-    document.documentElement.style.setProperty(`--background-color`, `black`);
-    document.documentElement.style.setProperty(`--text-color`, ` #fefefe`);
-    isDark = true;
-  }
-});
 
 
+fetch("https://api.github.com/users/marcinkrygier/repos?sort=created")
+  .then((resp) => resp.json())
+  .then((resp) => {
+    for (let repo of resp) {
+      const { name, html_url } = repo;
+      const repositoryList = document.querySelector(".list--js");
+      const myTemplate = `<li> ${name} <a href="${html_url}" title"link do repozytorium ${name}na githubie">link do githuba</a>
+    </li>`;
+      repositoryList.innerHTML += myTemplate;
+      console.log(`${name} ${html_url}`);
+    }
+  })
+  .catch((error) => {
+    console.log("Błąd pobierania");
+  });
